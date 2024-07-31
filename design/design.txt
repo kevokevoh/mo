@@ -67,7 +67,7 @@ SALES ANALYTICS
 - Consent and verification screen for previuosly provided data
 - Upload screen for documents required ie National ID
 - Review and Submit Screen
-- Net Steps Screen
+- Next Steps Screen
 
 
 

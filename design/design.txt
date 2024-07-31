@@ -1,0 +1,80 @@
+# Design the user interface for an agent and/or merchant app, taking into consideration the integration with the Mophones CRM and 3rd party locking and QC  software.
+Specifically:-
+-  load their devices onto our platform
+- convert and onboard leads they’ve generated.
+
+Key features to faciliate the specific tasks:
+PRODUCT CATALOGUE
+
+1. Load Products: 
+- Implement a pagination mechanism to lazy load products in batches specified by the user at a time. 
+- periodically sync products with the CRM for recently updated/created products.
+- Implement search and filter functionality
+- Cache frequently viewd products
+
+2. Product List View
+- Offer grid and/or list views and save user preferences
+- QUick view functionality without leaving the paginated list
+- Can improve the pagination with infinitw scroll functionality and scroll to top navigation
+
+3. Product Detail View:
+- Display all product information with real time inventory from the CRM
+- Gallery view for phone media including images etc
+- Can show distribution based on product variations ie phone color etc
+
+4. Product Management:
+- Streamline adding new products, validation with CRM as well as option to bulk load products
+- Provide product states when adding ie pending approval, received in warehouse, added phone locking ready to dispach etc
+- Allow edit modal and incline edits  for comprehensive and quick updates to products
+- Allow archive and deleting products from catalogue updating CRM
+
+
+5. Analytics and Insights:
+- add product performance metrics ie sales, profit margins.
+- Trend analysis on rising/declining product popularity.
+
+
+SALES ANALYTICS
+
+1. Lead Capture:
+- Implement a multi channel lead entry for lead capture including forms, email import etc.
+- Define essential fields, probable progressive profiling and source tracking.
+
+2. Lead Qualification and Nurturing:
+- Implement an algorithim to score leads as well as analyse lead quality based on available data
+- Segment leads based on quality, responsiveness and other relevant factors as well as provide custom user rules
+- Automatce communication flows as well as personalised multi channel engagement logging interactions
+
+3. Conversion and Onboarding Flows:
+- Guided sales flows with common scenario highlights
+- Automated communications for leads to customer profile
+- Provide workflows for product set-up as well as usage tutorials, guides and documentation
+
+4. Analytics and Reporting:
+- Show lead progression as well as bottlenecks for future optimisation
+- Forecasting based on current pipeline as well as suggest optimisation using predictive analysis
+
+
+
+
+# onboarding flow that shows the customer the finance terms for a product they’d want to pay in installments and asks them a few psychometric questions that would result in a loan approval.
+
+- Welcome screen to introduce the process
+- Privacy information  screen to collect baic details ie Names, NationalID etc
+- Financial Terms screen and concent to terms ie Interest rate range, potential fees and charges
+- User analytics questions screen like employment and income status and details, existing financial obligations.
+- Psychometric questions screen ie How often do you make impulsive purchases?
+- Consent and verification screen for previuosly provided data
+- Upload screen for documents required ie National ID
+- Review and Submit Screen
+- Net Steps Screen
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+# Develop a basic MVP to a group of early adopters that moves a lead through the funnel based on certain criteria they’ve met.
+- Detail the backend requirements to support your app and onboarding flow.
+- Develop an automated funnel that enables conversion, onboarding, and sends the customer a request for deposit payment. 
+
+## API ROUTES
+POST /api/v2/users - Create user
+
+GET /api/v2/users - List users
+
+PUT /api/v2/users/{id} - Update user
+
+POST /api/v2/leads - Create new lead
+
+GET /api/v2/leads/{id} - Get lead details
+
+PUT /api/v2/leads/{id} - Update lead information
+
+DELETE /api/v2/leads/{id} - Delete lead
+
+POST /api/v2/leads/{id}/qualify - Trigger lead qualification(After KYC or some algo calculations)
+
+POST /api/v2/leads/{id}/convert - Mark lead as converted (User consented to take up loan)
+
+POST /api/v2/leads/{id}/onboard - Start onboarding process (Associate user with product and other backend tasks)
+
+GET /api/v2/leads/{id}/onboarding-status - Check onboarding progress
+
+POST /api/v2/leads/{id}/request-deposit - Initiate deposit payment request
+
+
+## DB Schema
+### Users (for agents/merchants):
+id (primary key)
+username
+email
+password (hashed)
+role
+
+### Leads
+id (primary Key): Unique identifier for the lead.
+name
+contact_info
+status: ie  "new," "qualified," "converted"
+kyc_status:  ie, "pending," "approved"
+
+### users_leads
+user_id (foreign Key)
+lead_id (foreign Key)
+
+### onboarding_process
+id (primary Key)
+lead_id (poreign Key)
+status: ie "initiated," "in_progress," "completed"
+progress: ie "document verification," "account creation"
+
+### deposit_requests
+id (primary Key)
+lead_id (poreign Key)
+amount
+status: ie "initiated," "completed"
+payment_method

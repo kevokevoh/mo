@@ -1,4 +1,4 @@
-# Develop a basic MVP to a group of early adopters that moves a lead through the funnel based on certain criteria they’ve met.
+s# Develop a basic MVP to a group of early adopters that moves a lead through the funnel based on certain criteria they’ve met.
 - Detail the backend requirements to support your app and onboarding flow.
 - Develop an automated funnel that enables conversion, onboarding, and sends the customer a request for deposit payment. 
 
@@ -27,6 +27,7 @@ GET /api/v2/leads/{id}/onboarding-status - Check onboarding progress
 
 POST /api/v2/leads/{id}/request-deposit - Initiate deposit payment request
 
+# Do the hard thing first!Lets do the schema
 ## DB Schema
 ### Merchants
 CREATE TABLE merchants (
